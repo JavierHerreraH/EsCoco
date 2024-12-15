@@ -1,0 +1,137 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow: hidden; /* Evitar el scroll en el body */
+}
+
+/* Navbar */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Contenedor que envuelve todas las secciones */
+#scroll-container {
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    overflow-y: scroll; /* Habilita el scroll en el contenedor */
+    scroll-snap-type: y mandatory; /* Activamos el scroll snapping */
+    scroll-behavior: smooth; /* Desplazamiento suave entre las secciones */
+}
+
+/* Sección Home */
+#home {
+    background-image: url('img/portada.png'); /* Ruta de la imagen de fondo */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh; /* Ocupa toda la pantalla */
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    scroll-snap-align: start; /* Hace que esta sección se "ajuste" al centro cuando se hace scroll */
+}
+
+#home h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+#home p {
+    font-size: 1.5em;
+}
+
+/* Sección Contacto */
+#contacto {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+    height: 100vh; /* Ocupa toda la pantalla */
+    scroll-snap-align: start; /* Se ajusta al centro al hacer scroll */
+}
+
+#contacto h2 {
+    font-size: 2em;
+}
+
+#contacto p {
+    font-size: 1.2em;
+}
+
+/* Sección Carta */
+#carta {
+    background-color: #fafafa;
+    padding: 40px;
+    text-align: center;
+    height: 100vh; /* Ocupa toda la pantalla */
+    scroll-snap-align: start; /* Se ajusta al centro al hacer scroll */
+}
+
+#carta h2 {
+    font-size: 2em;
+}
+
+#carta p {
+    font-size: 1.2em;
+}
+
+/* Sección Final */
+#final {
+    background-color: #e2e2e2;
+    padding: 40px;
+    text-align: center;
+    height: 100vh; /* Ocupa toda la pantalla */
+    scroll-snap-align: start; /* Se ajusta al centro al hacer scroll */
+}
+
+#final h2 {
+    font-size: 2em;
+}
+
+#final p {
+    font-size: 1.2em;
+}
+
+/* Estilos generales */
+h1, h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 18px;
+    padding: 5px;
+}
+
+
+
+
+
