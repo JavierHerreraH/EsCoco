@@ -2,7 +2,7 @@
 
 html {
     height: 100%;
-    overflow: hidden; /* Evita el scroll en el html */
+    overflow: hidden;
 }
 
 body {
@@ -10,42 +10,37 @@ body {
     padding: 0;
     height: 100%;
     scroll-snap-type: y mandatory;
-    overflow-y: scroll; /* Permite el scroll solo en el body */
-    padding-top: 80px; /* Espacio para el navbar */
+    overflow-y: scroll;
+    padding-top: 80px;
     scroll-behavior: smooth;
 }
 
-/* Estilo del navbar */
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 10; /* Asegura que el navbar esté por encima del contenido */
-    background-color: transparent; /* Hace que el fondo sea transparente */
-    transition: background-color 0.3s ease; /* Transición suave al cambiar de color */
+    z-index: 10;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
 }
 
-/* Estilo de los enlaces */
 .navbar-nav .nav-link {
-    color: #000; /* Cambiar el color de los enlaces a negro */
-    font-weight: 600; /* Hacer los enlaces un poco más resaltados */
-    transition: color 0.3s ease; /* Transición suave para el color */
+    color: #000;
+    font-weight: 600;
+    transition: color 0.3s ease;
     font-size: 30px;
 }
 
-/* Estilo cuando el ratón pasa por encima */
 .navbar-nav .nav-link:hover {
-    color: hsl(25, 100%, 24%); /* Cambiar el color del enlace al pasar el ratón (por ejemplo, color naranja) */
-    text-decoration: underline; /* Añadir subrayado al pasar el ratón */
+    color: hsl(25, 100%, 24%);
+    text-decoration: underline;
 }
 
-/* Fondo semitransparente negro cuando se despliega el menú */
 .navbar-collapse {
     position: relative;
 }
 
-/* Fondo semitransparente negro con animación */
 .navbar-collapse.show::before {
     content: "";
     position: fixed;
@@ -53,36 +48,32 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.9); /* Fondo negro con 50% de opacidad */
-    z-index: 1; /* Fondo detrás */
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1;
     opacity: 0;
-    transition: opacity 0.3s ease; /* Animación */
+    transition: opacity 0.3s ease;
 }
 
 .navbar-collapse.show::before {
-    opacity: 1; /* Fondo visible con transición */
+    opacity: 1;
 }
 
-/* Asegúrate de que los ítems estén por encima del fondo */
 .navbar-nav {
     position: relative;
-    z-index: 2; /* Contenido por encima del fondo */
+    z-index: 2;
 }
 
-/* Cambiar el color de las letras a blanco cuando el menú se despliega */
 .navbar-collapse.show .nav-link {
-    color: #fff !important; /* Color blanco para los enlaces */
+    color: #fff !important; 
 }
 
-/* Opcional: Cambiar el color de las letras cuando el fondo esté visible */
 .navbar-collapse.show .nav-link:hover {
-    color: #ddd; /* Color gris claro al hacer hover */
+    color: #ddd;
 }
 
-/* Asegura que el botón de toggle del menú esté por encima del fondo */
 .navbar-toggler {
     position: relative;
-    z-index: 3; /* Botón por encima del fondo */
+    z-index: 3;
 }
 
 
@@ -100,19 +91,18 @@ body {
     align-items: center;
     scroll-snap-align: start;
 }
-/* Esilo de la Sección 1 */
 .seccion1 {
     background-image: url('img/fondo.png');
-    background-size: cover; /* Asegura que la imagen cubra el fondo */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    height: 120%; /* Asegura que la sección ocupe toda la altura */
-    width: 100%; /* Asegura que la sección ocupe todo el ancho */
-    color: white; /* Ajusta el color del texto si la imagen es oscura */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120%; 
+    width: 100%;
+    color: white; 
 }
 .seccion1 h1 {
     font-family: 'Apple Chancery';                                            
-    font-size: 15vw;  /* Ajusta el tamaño del texto según el ancho de la pantalla */
+    font-size: 15vw;
     color: #000000;
 }
 
@@ -124,7 +114,6 @@ body {
     margin: auto;
 }
 
-/* Estilo del texto */
 .section .text {
     flex: 1;
     padding-right: 20px;
@@ -155,7 +144,6 @@ body {
     background-color: hsl(25, 90%, 30%);
 }
 
-/* Estilo de las imágenes */
 .section .images {
     flex: 1;
     display: flex;
@@ -194,25 +182,23 @@ body {
 .section:nth-child(3) {
     background-color: #dee2e6;
     padding: 40px 20px;
-    color: #333; /* Ajusta el color del texto para que sea legible */
+    color: #333;
 }
 .footer {
     background-color: #dee2e6;
     padding: 40px 20px;
-    color: #333; /* Ajusta el color del texto para que sea legible */
+    color: #333;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Párrafo introductorio */
 .section:nth-child(3) p {
     font-size: 1.2rem;
     margin-bottom: 40px;
 }
 
-/* Estilo de la lista de información de contacto */
 .contact-info ul {
     list-style-type: none;
     padding: 100px;
@@ -230,10 +216,9 @@ body {
 }
 
 .contact-info a:hover {
-    color: #d9534f; /* Cambia el color al pasar el ratón */
+    color: #d9534f;
 }
 
-/* Estilo para la imagen de Google Maps */
 .maps-container {
     text-align: center;
     margin-top: 40px;
@@ -292,37 +277,35 @@ body {
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
-    /* Modificación para asegurar que el contenedor de contacto y mapa estén en columnas */
     .contact-info,
     .maps-container {
         width: 100%;
-        margin-top: 20px; /* Espacio entre los elementos */
-        text-align: center; /* Centrar el contenido */
+        margin-top: 20px;
+        text-align: center;
     }
 
-    /* En móvil, las listas de contacto y la imagen deben estar en columna */
     .contact-info ul {
-        padding: 0; /* Eliminamos el padding para que no haya espacio extra */
+        padding: 0;
         list-style-type: none;
     }
 
     .contact-info li {
-        margin-bottom: 10px; /* Espaciado entre los elementos de la lista */
+        margin-bottom: 10px;
     }
 
     .maps-container {
-        margin-top: 20px; /* Espacio adicional después de la lista de contacto */
+        margin-top: 20px;
     }
 
     .maps-container img {
         width: 100%;
-        max-width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-        height: auto; /* Mantiene la proporción de la imagen */
+        max-width: 100%;
+        height: auto;
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        display: block; /* Hace que la imagen se comporte como un bloque */
-        margin-left: auto; /* Centra la imagen horizontalmente */
-        margin-right: auto; /* Centra la imagen horizontalmente */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .sidebar {
@@ -340,7 +323,7 @@ body {
 /* Menú lateral */
 .sidebar {
     position: fixed;
-    top: 80px; /* Para que no se sobreponga al navbar */
+    top: 80px;
     left: 0;
     width: 200px;
     height: 100%;
@@ -369,8 +352,6 @@ body {
     color: hsl(25, 100%, 24%);
     text-decoration: underline;
 }
-
-/* Estilo del footer */
 
 .contact-info ul {
     list-style-type: none;
@@ -404,12 +385,10 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Aumenta el espacio superior al hacer clic en las secciones */
 #entrantes, #ensaladas, #arroces, #pa, #snacks, #carnes, #pescados, #pizzas, #salsas, #postres {
-    scroll-margin-top: 100px; /* Ajusta el valor según lo que necesites */
+    scroll-margin-top: 100px;
 }
 
-/* Estilo para cada ítem del menú (plato, bebida, postre) */
 .menu-item {
     background-color: #444444;
     padding: 20px;
@@ -423,17 +402,14 @@ body {
 }
 
 .menu-item:hover {
-    transform: translateY(-10px); /* Efecto de elevación al pasar el ratón */
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Sombra más intensa al hacer hover */
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
-
-/* Agregar un borde para distinguir más claramente las cartas */
 
 .menu-item {
     border: 1px solid #ddd;
 }
 
-/* Para los títulos dentro de cada ítem */
 .menu-item h4 {
     font-size: 1.5rem;
     font-weight: 600;
@@ -447,7 +423,6 @@ body {
     
 }
 
-/* Descripción de cada plato */
 .menu-item p {
     font-size: 1rem;
     color: #ffffff;
@@ -457,15 +432,11 @@ body {
     font-size: 1.2rem;
     font-weight: 600;
     color: hsl(0, 0%, 100%);
-    
-    padding: 5px 10px; /* Añadimos un poco de relleno alrededor del texto */
-    background-color: hsl(0, 0%, 0%); /* Fondo de color */
-    border-radius: 5px; /* Borde redondeado */
-    
-    /* Aseguramos que el tamaño del fondo sea solo el necesario para el texto */
+    padding: 5px 10px;
+    background-color: hsl(0, 0%, 0%);
+    border-radius: 5px;
     display: inline-block;
     padding: 5px 10px;
-    
     background-color: hsl(0, 0%, 0%);
     border-radius: 5px;
     box-sizing: content-box;
