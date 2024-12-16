@@ -1,28 +1,88 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Restaurante</title>
+    <title>EsCoco - Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- Favicon principal para todos los navegadores -->
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Iconos para iOS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+
+    <!-- Iconos para Android -->
+    <link rel="icon" sizes="192x192" href="favicon/android-chrome-192x192.png">
+
+    <!-- Archivo manifest para PWA -->
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <!-- Otros iconos y metadatos según sea necesario -->
+
 </head>
+
 <body>
-    <!-- Navbar -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="carta.html">Carta</a></li>
-        </ul>
+    <!-- Navbar común -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="img/ico.png" alt="EsCoco Logo" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carta.html">Carta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <!-- Sección Contacto -->
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Para más información, llámanos al 555-1234 o visítanos en nuestra dirección:</p>
-        <p>Calle Ficticia 123, Ciudad</p>
-    </section>
+    <!-- Contenido de contacto -->
+    <div class="container mt-5">
+        <h1>Contacto</h1>
+        <p class="lead">Estamos aquí para ayudarte. Contáctanos por cualquiera de los medios a continuación.</p>
 
-    <script src="script.js"></script>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Información de contacto</h3>
+                <p><strong>Dirección:</strong> Calle 123, Ciudad EsCoco</p>
+                <p><strong>Teléfono:</strong> +1 234 567 890</p>
+                <p><strong>Email:</strong> info@escoco.com</p>
+                <p><strong>Horario:</strong> Lunes a Domingo, 12:00 PM - 10:00 PM</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Formulario de contacto</h3>
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
