@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EsCoco - Contacto</title>
+    <title>EsCoco - Reserva</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <!-- Favicon principal para todos los navegadores -->
@@ -41,42 +41,47 @@
                         <a class="nav-link" href="carta.html">Carta</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                        <a class="nav-link active" href="reserva.html">Reserva</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Contenido de contacto -->
+    <!-- Contenido de reserva -->
     <div class="container mt-5">
-        <h1>Contacto</h1>
-        <p class="lead">Estamos aquí para ayudarte. Contáctanos por cualquiera de los medios a continuación.</p>
+        <h1>Reserva</h1>
+        <p class="lead">Reserva tu mesa en EsCoco. Completa el formulario a continuación.</p>
 
         <div class="row">
-            <div class="col-md-6">
-                <h3>Información de contacto</h3>
-                <p><strong>Dirección:</strong> Calle 123, Ciudad EsCoco</p>
-                <p><strong>Teléfono:</strong> +1 234 567 890</p>
-                <p><strong>Email:</strong> info@escoco.com</p>
-                <p><strong>Horario:</strong> Lunes a Domingo, 12:00 PM - 10:00 PM</p>
-            </div>
-            <div class="col-md-6">
-                <h3>Formulario de contacto</h3>
+            <div class="col-md-12">
+                <h3>Formulario de reserva</h3>
                 <form>
                     <div class="mb-3">
                         <label for="nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" required>
+                        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
                     </div>
                     <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" required>
+                        <label for="telefono" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="telefono" placeholder="Tu teléfono" required>
                     </div>
                     <div class="mb-3">
-                        <label for="mensaje" class="form-label">Mensaje</label>
-                        <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico" required>
                     </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <div class="mb-3">
+                        <label for="fecha" class="form-label">Día de la reserva</label>
+                        <input type="date" class="form-control" id="fecha" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="hora" class="form-label">Hora de la reserva</label>
+                        <input type="time" class="form-control" id="hora" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="comensales" class="form-label">Número de comensales</label>
+                        <input type="number" class="form-control" id="comensales" placeholder="Cantidad de personas" min="1" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Reservar</button>
                 </form>
             </div>
         </div>

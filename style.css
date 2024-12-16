@@ -552,7 +552,7 @@ body {
 }
 
 .solomillo-ternera {
-    background-image: url('img/solomilloternera.jpg');
+    background-image: url('img/solomilloternera.png');
     background-size: cover;
     background-position: center;
     padding: 20px;
@@ -560,7 +560,7 @@ body {
 }
 
 .lechona-domingos {
-    background-image: url('img/lechonadomingos.jpg');
+    background-image: url('img/lechonadomingos.png');
     background-size: cover;
     background-position: center;
     padding: 20px;
